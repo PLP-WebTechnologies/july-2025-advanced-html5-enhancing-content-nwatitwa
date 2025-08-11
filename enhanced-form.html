@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        header, section, footer {
+            margin-bottom: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #555;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 6px;
+            margin-top: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HTML5 Content Showcase</h1>
+    <p>This page demonstrates advanced HTML5 content elements and a well-structured form using only native HTML5 features.</p>
+</header>
+
+<section>
+    <h2>📋 Features List</h2>
+    <ul>
+        <li>Organized content with lists and tables</li>
+        <li>Embedded images, audio, and video</li>
+        <li>Accessible, validated HTML5 forms</li>
+    </ul>
+</section>
+
+<section>
+    <h2>📊 Sample Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Description</th>
+                <th>Supported Since</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Audio</td>
+                <td>Embed playable audio files directly</td>
+                <td>HTML5</td>
+            </tr>
+            <tr>
+                <td>Video</td>
+                <td>Embed playable video content without plugins</td>
+                <td>HTML5</td>
+            </tr>
+            <tr>
+                <td>Form Validation</td>
+                <td>Native browser validation without JavaScript</td>
+                <td>HTML5</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>🎨 Embedded Media</h2>
+    <figure>
+        <img src="https://via.placeholder.com/400x200" alt="Sample image" width="400">
+        <figcaption>Sample image embedded using semantic HTML5 <code>&lt;figure&gt;</code> and <code>&lt;img&gt;</code>.</figcaption>
+    </figure>
+
+    <figure>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <figcaption>Sample audio file</figcaption>
+    </figure>
+
+    <figure>
+        <video controls width="400">
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+        <figcaption>Sample video file</figcaption>
+    </figure>
+</section>
+
+<section>
+    <h2>📝 Contact Form</h2>
+    <form action="#" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1234567890" pattern="^\+?[0-9]{7,15}$" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <label for="contact-method">Preferred Contact Method:</label>
+            <select id="contact-method" name="contact-method" required>
+                <option value="">-- Select --</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select>
+
+            <label for="subscribe">Subscribe to newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+        </fieldset>
+
+        <fieldset>
+            <legend>Message</legend>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+        </fieldset>
+
+        <input type="submit" value="Submit Form">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 HTML5 Demo. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
